@@ -9,6 +9,7 @@ double calcTriangle(void);
 void rectangle(void);
 void dataTyper(void);
 void timeChange(void);
+void historama(void);
 #include "main.h"
 #include <stdio.h>
 #include <math.h>
@@ -21,6 +22,7 @@ int main(){
         printf("b: Rectangle lab\n");
         printf("c: DataType Lab\n");
         printf("d: Seconds Calculator Lab\n");
+        printf("ee: Historama Lab\n");
         printf("Input 'x' if done\n\n");
         
         char choice;
@@ -34,6 +36,8 @@ int main(){
             dataTyper();
         } else if(choice == 'd') {
             timeChange();
+        } else if(choice == 'e') {
+            historama();
         } else if(choice == 'x') {
             break;
         }else {
